@@ -1,0 +1,109 @@
+/* Bb */
+
+div.bb-container {
+    display: inline-flex;
+    padding: 10px 10px;
+    min-width: 800px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 20px;
+}
+
+div > p.price {
+    font-size: larger;
+    font-weight: bold;
+    text-align: right;
+}
+
+div > p.date {
+    font-style: italic;
+    text-align: right;
+}
+
+.image {
+    max-width: 30%;
+    margin-right: 10px;
+}
+
+.image > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.others {
+    width: 100%;
+    margin-left: 10px;
+}
+
+/* Comments */
+
+.comment {
+    display: block;
+    margin: 10px 0;
+    padding: 4px 12px;
+    background-color: rgb(233, 243, 255);
+    border-radius: 16px;
+    width: fit-content;
+    min-width: 500px;
+}
+
+div.comment > h4, p {
+    margin: 8px 0;
+}
+
+form.comment {
+    background-color: rgb(216, 224, 252);
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 4px 12px;
+    max-width: max-content;
+}
+
+form.comment > h3 {
+    margin: 8px 0;
+}
+
+form.comment > table {
+    border-collapse: separate;
+    border-spacing: 0 4px;
+    vertical-align: middle;
+}
+
+.td-label > p {
+    margin-right: 8px;
+}
+
+form.comment > table > tr > td > textarea {
+    margin-top: 3px;
+}
+
+input, textarea {
+    border-radius: 16px;
+    min-height: 32px;
+    height: 32px;
+    min-width: 300px;
+    background-color: rgb(233, 243, 255);
+    border: none;
+    padding: 1px 20px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    outline: 2px rgb(116, 131, 186);
+}
+
+button {
+    background-color: rgb(33, 71, 209);
+    border: none;
+    border-radius: 16px;
+    min-height: 32px;
+    min-width: 100px;
+    color: white;
+    font-size: 14px;
+    transition: .25s;
+}
+
+button:hover {
+    background-color: rgb(19, 49, 156);
+    cursor: pointer;
+}

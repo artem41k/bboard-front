@@ -1,0 +1,38 @@
+<div class="bb-container" *ngIf="bb">
+    <div class="image" *ngIf="bb.image">
+        <img src="{{bb.image}}" alt="">
+    </div>
+    <div class="others">
+        <h2>{{bb.title}}</h2>
+        <p>{{bb.content}}</p>
+        <p class="price">{{bb.price|currency:'RUR'}}</p>
+        <p>{{bb.contacts}}</p>
+        <p class="date">{{bb.created_at|date:'medium'}}</p>
+    </div>
+</div>
+<form (ngSubmit)="submitComment()" class="comment">
+    <h3>Новый комментарий</h3>
+    <table>
+        <tr>
+            <td class="td-label"><p>Имя:</p></td>
+            <td><input [(ngModel)]="author" name="author" required></td>
+        </tr>
+        <tr>
+            <td class="td-label"><p>Пароль:</p></td>
+            <td><input type="password" [(ngModel)]="password" name="password" required></td>
+        </tr>
+        <tr>
+            <td class="td-label"><p>Содержание:</p></td>
+            <td><textarea [(ngModel)]="content" name="content" required></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit">Добавить</button></td>
+        </tr>
+    </table>
+</form>
+<div class="comment" *ngFor="let comment of comments">
+    <h4>{{comment.author}}</h4>
+    <p>{{comment.content}}</p>
+    <p class="date">{{comment.created_at|date:'medium'}}</p>
+</div>

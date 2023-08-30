@@ -1,0 +1,13 @@
+<h2>Последние 10 объявлений</h2>
+<div *ngFor="let bb of bbs" class="bb-container" >
+    <div class="image">
+        <img src="{{bb.image}}" alt="" *ngIf="bb.image">
+        <img src="{{placeholder_img_url}}" alt="" *ngIf="!bb.image">
+    </div>
+    <div class="others">
+        <h2><a [routerLink]="[bb.id]">{{bb.title}}</a></h2>
+        <p>{{bb.content}}</p>
+        <p class="price">{{bb.price|currency:'RUR'}}</p>
+        <p class="date">{{bb.created_at|date:'medium'}}</p>
+    </div>
+</div>
