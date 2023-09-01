@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BbService } from './bb.service';
 import { ActivatedRoute } from '@angular/router';
+import { BbService } from '../bb.service';
 
 @Component({
   selector: 'app-bb-detail',

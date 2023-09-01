@@ -11,8 +11,8 @@ import localeRuExtra from '@angular/common/locales/extra/ru';
 import { LOCALE_ID } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { BbListComponent } from './bb-list.component';
-import { BbDetailComponent } from './bb-detail.component';
+import { BbListComponent } from './bb-list/bb-list.component';
+import { BbDetailComponent } from './bb-detail/bb-detail.component';
 
 import { BbService } from './bb.service';
 
