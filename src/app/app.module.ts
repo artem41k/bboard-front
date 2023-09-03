@@ -15,6 +15,7 @@ import { BbListComponent } from './bb-list/bb-list.component';
 import { BbDetailComponent } from './bb-detail/bb-detail.component';
 
 import { BbService } from './bb.service';
+import { RubricsListComponent } from './rubrics-list/rubrics-list.component';
 
 registerLocaleData(localeRu, 'ru', localeRuExtra);
 
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     BbListComponent,
-    BbDetailComponent
+    BbDetailComponent,
+    RubricsListComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

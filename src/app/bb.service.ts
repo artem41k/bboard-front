@@ -44,4 +44,8 @@ export class BbService {
   getComments(pk: Number): Observable<Object[]> {
     return this.http.get<Object[]>(this.backend_url + '/api/bbs/' + pk + '/comments/');
   }
+
+  getRubricsList(): Observable<Object[]> {
+    return this.http.get<Object[]>(this.backend_url + '/api/rubrics/');
+  }
 }

@@ -38,7 +38,8 @@ export class BbDetailComponent implements OnInit {
     this.bbservice.addComment(this.bb.id, this.author,
       this.password, this.content).subscribe(
         (comment: Object) => {
-          if (comment) {
+          // Check if the returned object isn't empty
+          if (comment.hasOwnProperty('content')) {
             this.content = '';
             this.getComments();
           }
