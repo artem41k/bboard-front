@@ -54,6 +54,10 @@
     cursor: pointer;
 }
 
+::ng-deep .font-italic {
+    font-style: italic;
+}
+
 header {
     text-align: center;
 }

@@ -48,4 +48,12 @@ export class BbService {
   getRubricsList(): Observable<Object[]> {
     return this.http.get<Object[]>(this.backend_url + '/api/rubrics/');
   }
+
+  getRubricInfo(pk: Number): Observable<Object[]> {
+    return this.http.get<Object[]>(this.backend_url + '/api/rubrics/' + pk + '/info/');
+  }
+
+  getBbsByRubric(pk: Number): Observable<Object[]> {
+    return this.http.get<Object[]>(this.backend_url + '/api/rubrics/' + pk);
+  }
 }

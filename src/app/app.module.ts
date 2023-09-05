@@ -16,11 +16,13 @@ import { BbDetailComponent } from './bb-detail/bb-detail.component';
 
 import { BbService } from './bb.service';
 import { RubricsListComponent } from './rubrics-list/rubrics-list.component';
+import { ByRubricComponent } from './by-rubric/by-rubric.component';
 
 registerLocaleData(localeRu, 'ru', localeRuExtra);
 
 const appRoutes: Routes = [
-  {path: ':pk', component: BbDetailComponent},
+  {path: 'rubric/:pk', component: ByRubricComponent},
+  {path: 'bb/:pk', component: BbDetailComponent},
   {path: '', component: BbListComponent}
 ]
 
@@ -29,7 +31,8 @@ const appRoutes: Routes = [
     AppComponent,
     BbListComponent,
     BbDetailComponent,
-    RubricsListComponent
+    RubricsListComponent,
+    ByRubricComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

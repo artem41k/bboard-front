@@ -1,6 +1,6 @@
 <nav *ngFor="let sr of super_rubrics" class="rubric-nav">
     <h1 class="superr">{{sr.name}}</h1>
     <ng-container *ngFor="let rubric of sr.rubrics">
-        <span class="subr"><a href="#">{{rubric.name}}</a></span>
+        <span class="subr"><a [routerLink]="['rubric/', rubric.id]">{{rubric.name}}</a></span>
     </ng-container>
 </nav>

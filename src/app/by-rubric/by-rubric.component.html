@@ -1,4 +1,4 @@
-<h2>Последние 10 объявлений</h2>
+<h1>{{rubric.name}}</h1>
 <div *ngFor="let bb of bbs" class="bb-container" >
     <div class="image">
         <img src="{{bb.image}}" alt="" *ngIf="bb.image">
@@ -11,3 +11,4 @@
         <p class="date">{{bb.created_at|date:'medium'}}</p>
     </div>
 </div>
+<p *ngIf="bbs.length == 0" class="font-italic">В этой рубрике объявлений пока нет:(</p>
