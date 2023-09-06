@@ -7,10 +7,25 @@
     font-size: 26px;
     margin-left: 5px;
     margin-bottom: 5px;
+    margin-top: 4px;
 }
 
 .subr > a {
     font-size: 22px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.some-page {
+    display: inline-block;
+    font-size: 26px;
+    margin-left: 5px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.divider {
+    height: 2px;
+    background-color: rgb(222, 222, 222);;
+    width: 100%;
 }

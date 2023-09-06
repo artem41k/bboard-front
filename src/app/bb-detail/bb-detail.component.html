@@ -3,6 +3,7 @@
         <img src="{{bb.image}}" alt="">
     </div>
     <div class="others">
+        <h4 class="rubric-link"><a [routerLink]="['/rubric/', bb.rubric.id]">{{bb.rubric.name}}</a></h4>
         <h2>{{bb.title}}</h2>
         <p>{{bb.content}}</p>
         <p class="price">{{bb.price|currency:'RUR'}}</p>

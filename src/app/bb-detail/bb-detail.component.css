@@ -91,3 +91,11 @@ input, textarea {
 input:focus, textarea:focus {
     outline: 2px rgb(116, 131, 186);
 }
+
+.rubric-link {
+    margin: 4px 0;
+    font-size: 18px;
+}
+.others > h2 {
+    margin-top: 4px;
+}

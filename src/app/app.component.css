@@ -2,6 +2,7 @@
     --a-color: rgb(0, 60, 144);
     --button-color: rgb(33, 71, 209);
     --button-hover-color: rgb(19, 49, 156);
+    --logo-color: black;
 }
 
 ::ng-deep * {
@@ -58,8 +59,12 @@
     font-style: italic;
 }
 
-header {
-    text-align: center;
+.logo {
+    margin-left: 20px;
+    color: var(--logo-color);
+}
+.logo > a:visited {
+    color: var(--logo-color);
 }
 
 .main-container {
